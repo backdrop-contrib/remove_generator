@@ -8,14 +8,14 @@
  * Implements hook_enable().
  */
 function remove_generator_enable() {
-  drupal_set_message(t('The Generator META tag has been removed.'));
+  backdrop_set_message(t('The Generator META tag has been removed.'));
 }
 
 /**
  * Implements hook_disable().
  */
 function remove_generator_disable() {
-  drupal_set_message(t('The Generator META tag has been restored.'));
+  backdrop_set_message(t('The Generator META tag has been restored.'));
 }
 
 /**

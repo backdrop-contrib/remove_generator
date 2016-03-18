@@ -7,7 +7,7 @@
 /**
  * Functional tests for the Generator META tag.
  */
-class RemoveGeneratorTestCase extends DrupalWebTestCase {
+class RemoveGeneratorTestCase extends BackdropWebTestCase {
   public static function getInfo() {
     return array(
       'name' => 'Remove Generator',
@@ -20,17 +20,17 @@ class RemoveGeneratorTestCase extends DrupalWebTestCase {
     // Don't load the module yet, so we can verify that the Generator META tag
     // was original present.
     parent::setUp();
-    $web_user = $this->drupalCreateUser(array('access content'));
-    $this->drupalLogin($web_user);
+    $web_user = $this->backdropCreateUser(array('access content'));
+    $this->backdropLogin($web_user);
   }
 
   function testRemoveGenerator() {
-    $this->drupalGet('<front>');
+    $this->backdropGet('<front>');
     $this->assertPattern('|Generator|', 'The Generator META tag is present.');
 
     module_enable(array('remove_generator'));
 
-    $this->drupalGet('<front>');
+    $this->backdropGet('<front>');
     $this->assertNoPattern('|Generator|', 'This Generator META tag has been removed.');
   }
 }

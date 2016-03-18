@@ -1,4 +1,4 @@
 name = Remove Generator
 description = Enable to remove the Generator META tag. No configuration required!
-core = 7.x
-files[] = remove_generator.test
+backdrop = 1.x
+type = module
