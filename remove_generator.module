@@ -5,20 +5,6 @@
  */
 
 /**
- * Implements hook_enable().
- */
-function remove_generator_enable() {
-  backdrop_set_message(t('The Generator META tag has been removed.'));
-}
-
-/**
- * Implements hook_disable().
- */
-function remove_generator_disable() {
-  backdrop_set_message(t('The Generator META tag has been restored.'));
-}
-
-/**
  * Implements hook_html_head_alter().
  */
 function remove_generator_html_head_alter(&$head_elements) {
