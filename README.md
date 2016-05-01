@@ -2,7 +2,7 @@ Remove Generator META tag
 =========================
 
 The [OWASP web application fingerprinting guide](https://www.owasp.org/index.php/Fingerprint_Web_Application_%28OTG-INFO-009%29) discusses methods to identify web applications and their version to determine
-known vulnerabilities and appropriate exploits. In the remediation advise, OWASP
+known vulnerabilities and appropriate exploits. In the remediation advice, OWASP
 recommends removing HTML code or anything else that explicitly points to a
 specific framework to be sure the framework cannot be detected by automatic scans.
 
