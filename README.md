@@ -11,7 +11,9 @@ The [OWASP web application fingerprinting guide](https://www.owasp.org/index.php
 
 One of the identifiers OWASP recommends removing is the META generator tags. This module provides that increment to improve the security posture of Backdrop installations.
 
-No configuration required!
+* Enable to remove the Generator META tag .
+* Disable to restore the Generator META tag.
+* No configuration required!
 
 Current Maintainer
 ------------------
