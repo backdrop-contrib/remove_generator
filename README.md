@@ -14,7 +14,7 @@ One of the identifiers OWASP recommends removing is the META generator tags. Thi
 Installation
 ------------
 
-* Enable to remove the Generator META tag .
+* Enable to remove the Generator META tag.
 * Disable to restore the Generator META tag.
 * No configuration required!
 
