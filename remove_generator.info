@@ -1,4 +1,4 @@
-name = Remove Generator
+name = Remove generator
 description = Enable to remove the Generator META tag. No configuration required!
 backdrop = 1.x
 type = module
