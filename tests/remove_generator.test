@@ -8,14 +8,6 @@
  * Functional tests for the Generator META tag.
  */
 class RemoveGeneratorTestCase extends BackdropWebTestCase {
-  public static function getInfo() {
-    return array(
-      'name' => 'Remove Generator',
-      'description' => 'Tests removal of the Generator META tag.',
-      'group' => 'Remove Generator',
-    );
-  }
-
   public function setUp() {
     // Don't load the module yet, so we can verify that the Generator META tag
     // was original present.
