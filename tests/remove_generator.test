@@ -33,6 +33,6 @@ class RemoveGeneratorTestCase extends BackdropWebTestCase {
     module_enable(array('remove_generator'));
 
     $this->backdropGet('node');
-    $this->assertNoRaw('<meta name="Generator" content="Backdrop CMS', 'Default meta tag "generator" displayed properly.');
+    $this->assertNoRaw('<meta name="Generator" content="Backdrop CMS', 'Default meta tag "generator" absent.');
   }
 }
