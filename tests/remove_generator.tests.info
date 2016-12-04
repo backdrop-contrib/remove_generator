@@ -1,0 +1,5 @@
+[RemoveGeneratorTestCase]
+name = Remove generator
+description = Remove the Generator META tag from the HTML source.
+group = Remove generator
+file = remove_generator.test

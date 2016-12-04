@@ -25,12 +25,12 @@ class RemoveGeneratorTestCase extends BackdropWebTestCase {
   }
 
   function testRemoveGenerator() {
-    $this->backdropGet('<front>');
-    $this->assertPattern('|Generator|', 'The Generator META tag is present.');
+    $this->backdropGet('node');
+    $this->assertPattern('/Generator/', 'The Generator META tag is present.');
 
     module_enable(array('remove_generator'));
 
-    $this->backdropGet('<front>');
-    $this->assertNoPattern('|Generator|', 'This Generator META tag has been removed.');
+    $this->backdropGet('node');
+    $this->assertNoPattern('/Generator/', 'This Generator META tag has been removed.');
   }
 }
